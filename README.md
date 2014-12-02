@@ -2,7 +2,8 @@ dl-flashpolicyd
 ===============
 
 dl-flashpolicyd serves Flash policy files, which are used to grant
-connection privileges to Flash applications.  If you want to use Flash
+connection privileges to Flash applications.  The (Adobe website) [https://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html]
+describes the protocol and format of the policy files.  If you want to use Flash
 to connect to a host, you'll need something to serve the file.
 
 The operation of this server is similar to that of the reference file
@@ -89,6 +90,9 @@ Using dl-flashpolicyd
 First, create a flash policy file using the instructions on [Adobe's
 website](https://www.adobe.com/devnet/flashplayer/articles/socket_policy_files.html).
 The rest of this manual will assume you've read these instructions.
+You can also read the (formal specification of the policy file)
+[https://www.adobe.com/devnet/articles/crossdomain_policy_file_spec.html],
+which also includes DTDs for XML validation.
 Place the policy file in a location where you won't forget about it.
 
 You'll probably need to test it out.  Run on the command line:
